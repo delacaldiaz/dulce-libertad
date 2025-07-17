@@ -5,28 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dulce Libertad – Deja el Azúcar</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #fefefc;
       color: #2d2d2d;
-      line-height: 1.6;
-      scroll-behavior: smooth;
     }
     header {
-      background: linear-gradient(to right, #d2f5e3, #ffe4ec);
-      padding: 80px 20px;
+      position: relative;
+      height: 100vh;
       text-align: center;
-      animation: fadeIn 1s ease-out;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #333;
+      overflow: hidden;
+    }
+    header video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.6;
     }
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       max-width: 600px;
       margin: auto;
     }
@@ -39,108 +50,104 @@
       border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #e05656;
     }
     section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      animation: fadeInUp 1s ease-out;
     }
     h2 {
       font-size: 2em;
       margin-bottom: 20px;
+      text-align: center;
     }
-    .benefits li {
-      background: #eaffea;
-      margin: 10px 0;
-      padding: 15px 20px;
-      border-radius: 10px;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      flex: 1 1 280px;
+      text-align: center;
+    }
+    .card img {
+      width: 100px;
+      margin-bottom: 15px;
     }
     .illustration {
       width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 30px auto;
       border-radius: 20px;
-    }
-    .faq dt {
-      font-weight: bold;
-      margin-top: 20px;
+      margin: 40px 0;
     }
     footer {
-      background-color: #333;
+      background-color: #2d2d2d;
       color: white;
       padding: 30px 20px;
       text-align: center;
-    }
-    .highlight {
-      color: #ff6b6b;
-      font-weight: bold;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Dulce Libertad</h1>
-  <p>21 días para dejar el azúcar con placer, motivación y energía real</p>
-  <a href="#lead-magnet" class="btn">Descarga gratis: Reto 3 días sin azúcar</a>
+  <video autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2023/10/09/189756-870591548_large.mp4" type="video/mp4">
+    Tu navegador no soporta video de fondo.
+  </video>
+  <div>
+    <h1>Dulce Libertad</h1>
+    <p>Transforma tu relación con el azúcar en solo 21 días.</p>
+    <a href="#inicio" class="btn">Empieza con el reto gratuito</a>
+  </div>
 </header>
 
-<section>
-  <h2>¿Qué vas a lograr?</h2>
-  <ul class="benefits">
-    <li>✔ Más energía y claridad mental</li>
-    <li>✔ Digestión ligera y mejor descanso</li>
-    <li>✔ Adiós a la ansiedad por lo dulce</li>
-    <li>✔ Recetas fáciles y deliciosas sin azúcar</li>
-  </ul>
-  <img class="illustration" src="https://cdn.pixabay.com/photo/2023/06/23/17/59/healthy-8083481_960_720.png" alt="Ilustración saludable">
+<section id="inicio">
+  <h2>¿Por qué dejar el azúcar?</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4221/4221692.png" alt="Energía" />
+      <p>Recupera tu energía natural sin altibajos emocionales ni fatiga crónica.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="Salud" />
+      <p>Mejora tu piel, tu digestión y tu sistema inmunológico.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1373/1373275.png" alt="Libertad" />
+      <p>Libérate del ciclo de antojos, ansiedad y culpa. Vive con más libertad.</p>
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>¿Qué incluye el programa?</h2>
-  <ul class="benefits">
-    <li>✓ Guía paso a paso de 21 días</li>
-    <li>✓ Recetas dulces sin azúcar</li>
-    <li>✓ Grupo privado motivador</li>
-    <li>✓ Mini audios y bonus descargables</li>
-  </ul>
-  <img class="illustration" src="https://cdn.pixabay.com/photo/2021/10/06/20/42/fruit-6687527_960_720.png" alt="Frutas felices">
-</section>
-
-<section id="lead-magnet">
-  <h2>Empieza hoy: Reto de 3 días sin azúcar (GRATIS)</h2>
-  <p>Recibe un PDF con recetas, consejos y apoyo para comenzar sin miedo.</p>
-  <a href="#" class="btn">Descargar el reto gratis</a>
-</section>
-
-<section>
-  <h2>Preguntas frecuentes</h2>
-  <dl class="faq">
-    <dt>¿Debo dejar el azúcar de golpe?</dt>
-    <dd>No. Te guiamos paso a paso para evitar ansiedad o efecto rebote.</dd>
-    <dt>¿Es compatible con familia y trabajo?</dt>
-    <dd>Sí. Está pensado para gente real, con poco tiempo y muchas ganas.</dd>
-  </dl>
+  <div class="grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png" alt="Plan 21 días" />
+      <p>Un plan progresivo de 21 días basado en ciencia y motivación.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2811/2811790.png" alt="Recetas" />
+      <p>Recetas dulces sin azúcar fáciles, sabrosas y sostenibles.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/9475/9475185.png" alt="Apoyo" />
+      <p>Grupo privado, audios diarios y acompañamiento emocional.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>¿Lista para tu transformación?</h2>
-  <p><span class="highlight">Únete hoy</span> a miles de personas que ya se liberaron del azúcar.</p>
-  <a href="#" class="btn">Accede a la Lista VIP</a>
+  <h2>Empieza con el reto gratuito</h2>
+  <p style="text-align:center;">Recibe una guía de 3 días sin azúcar, con recetas, consejos y seguimiento emocional.</p>
+  <div style="text-align:center;">
+    <a href="#" class="btn">Descargar reto 3 días</a>
+  </div>
 </section>
 
 <footer>
